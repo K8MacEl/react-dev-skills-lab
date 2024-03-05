@@ -1,0 +1,41 @@
+.NewSkillForm {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .5vmin rgb(242 137 97) solid;
+    color: teal;
+    width: 12rem;
+    row-gap: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.teal-text {
+    color: teal;
+}
+
+.AddSkill {
+    color: white;
+    background-color: teal;
+    border-radius: 5px;
+    width: 10rem;
+    ;
+}
+
+.level_options {
+    color: teal;
+    width: 7.75rem;
+    border: .5vmin rgb(242 137 97) solid;
+}
+
+.skill_input {
+    color: teal;
+    width: 7rem;
+    border: .5vmin rgb(242 137 97) solid;
+}

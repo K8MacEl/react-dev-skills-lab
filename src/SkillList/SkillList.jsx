@@ -1,6 +1,7 @@
 // Defining and exporting a component from this file
 // to be rendered by another component
 import SkillListItem from "../SkillListItem/SkillListItem";
+import "./SkillList.css"
 
 // ALL components must capitalized!
 export default function SkillList({ skills }) {
@@ -13,7 +14,7 @@ export default function SkillList({ skills }) {
     }) : <li>No skills available</li>;
   
     return (
-      <ul>
+      <ul className="skillsLi">
         {skillsLi}
       </ul>
     );

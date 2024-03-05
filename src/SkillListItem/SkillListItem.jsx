@@ -6,8 +6,10 @@ function SkillListItem({skill, level}){
 	// when the component is being rendered, 
 	// refer SkillList, and look for the word skill
 	return (
-		<li className='SkillListItem'>
-			{skill} Level: {level}
+		<li 
+			className={'SkillListItem'}>
+			<div className='skill_name'>{skill}</div>
+			<div className='skill_level'> Level: {level}</div>
 		</li>
 	);
 }

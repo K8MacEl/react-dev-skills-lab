@@ -1,5 +1,36 @@
 .SkillListItem {
-   
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    margin-bottom: 4px;
+    border: .5vmin rgb(242 137 97) solid;
+    width: 12rem;
+  }
+  
+  .skill_name {
+
+    color: teal
   }
 
+  .skill_level {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    width: 6rem;
+    }
+    
+
+  .padding-0 {
+    padding: 0;
+  }
+  
+  .teal-text {
+    color: teal;
+  }
   
