@@ -4,7 +4,7 @@ export default function NewSkillForm() {
     return (
 
         <form action="skill">
-            <label htmlFor="NewSkill">Skill <input type="text" /></label>
+            <label htmlFor="NewName">Skill <input type="text" /></label>
             <label htmlFor="SkillLevel">Level
                 <select name="SkillLevel" id="SkillLevel">
                     <option value="1">1</option>
