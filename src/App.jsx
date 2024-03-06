@@ -6,14 +6,15 @@ import SkillList from './SkillList/SkillList'
 import NewSkillForm from './NewSkillForm/NewSkillForm'
 
 
-function App() {
-  const skills = [
-    { name: "HTML", level: 5 },
-    { name: "CSS", level: 3 },
-    { name: "JavaScript", level: 4 },
-    { name: "Python", level: 2 },
-  ];
 
+function App() {
+  const [skills, setSkills] = useState([
+    { name: "", level: ""},
+  ]);
+
+  const addSkill = (newSkill) => {
+    setSkills([...skills, newSkill]);
+  }
 
   return (
     <>
@@ -21,7 +22,7 @@ function App() {
         <h1>React Dev Skills</h1>
         {/* skills is the array not name */}
         <SkillList skills={skills}/> 
-        <NewSkillForm />
+        <NewSkillForm onAddSkill={addSkill}/>
       </div>
     </>
   )
