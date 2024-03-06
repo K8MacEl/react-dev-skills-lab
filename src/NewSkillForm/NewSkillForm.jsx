@@ -3,13 +3,13 @@ import "./NewSkillForm.css"
 
 function NewSkillForm({ onAddSkill}) {
     const [skillName, setSkillName] = useState('');
-    const [skillLevel, setSkillLevel] = useState('1'); //defaults level to 1
+    const [skillLevel, setSkillLevel] = useState('3'); //defaults level to 3
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onAddSkill({ name: skillName, level: parseInt(skillLevel, 5) });
+        onAddSkill({ name: skillName, level: parseInt(skillLevel)});
         setSkillName('');
-        setSkillLevel('1');
+        setSkillLevel('');
     };
 
     return (
@@ -17,6 +17,7 @@ function NewSkillForm({ onAddSkill}) {
             <label> Skill :
                 <input 
                     type="text" 
+                    required="true"
                     className="skill_input" 
                     value={skillName}
                     onChange={(e)=> setSkillName(e.target.value)}
